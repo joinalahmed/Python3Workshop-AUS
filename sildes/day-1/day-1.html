@@ -1,0 +1,946 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>day-1</TITLE>
+<META NAME="description" CONTENT="day-1">
+<META NAME="keywords" CONTENT="day-1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="day-1.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev_g.png">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+  HREF="node1.html">About this document ...</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+documentclassbeamer
+par
+mode&lt;presentation&gt; 
+usethemeCambridgeUS
+usecolorthemeseagull
+usefontthemedefault
+
+par
+usepackagegraphicx
+usepackagebooktabs
+usepackageragged2e
+usepackageminted
+usepackagelipsum
+usepackage[export]adjustbox
+par
+definecolorUniBlueRGB83,121,170
+definecolorDarkGrayRGB90,90,90
+definecolorLightGrayRGB150,150,150
+definecolorTextGreenRGB115,155,15
+definecolorOceanRGB23,142,189
+definecolorBGRGB215,215,215
+par
+setbeamercolornormalfg=DarkGray
+setbeamercolortitlefg=UniBlue
+setbeamercolorframetitlefg=UniBlue
+setbeamercolorstructurefg=UniBlue
+setbeamercolornormal textfg=DarkGray,bg=white
+setbeamercolorsection number projectedbg=UniBlue,fg=white
+par
+setbeamertemplateitemize itemscriptsizeraise1.25pthboxdonotcoloroutermaths<!-- MATH
+ $blacktriangleright$
+ -->
+<SPAN CLASS="MATH"></SPAN>
+setbeamertemplateitemize subitemtinyraise1.5pthboxdonotcoloroutermaths<SPAN CLASS="MATH"><IMG
+ WIDTH="131" HEIGHT="27" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$bullet$"></SPAN>
+setbeamertemplateitemize subsubitemtinyraise1.5pthboxdonotcoloroutermaths<SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="15" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$blacksqaure$"></SPAN>
+setbeamercoloritemize itemfg=darkred
+setbeamercoloritemize subitemfg=TextGreen
+setbeamercoloritemize subbodyfg=LightGray
+par
+setbeamertemplateenumerate subiteminsertenumlabel.insertsubenumlabel
+setbeamertemplateenumerate subsubiteminsertenumlabel.insertsubenumlabel.insertsubsubenumlabel
+setbeamertemplateenumerate mini templateinsertenumlabel
+par
+setbeamertemplatenavigation symbols
+par
+newedcommandVeryLargeFontfontsize3015selectfont
+newedcommandLargeFontfontsize1515selectfont
+newedcommandTinyFontfontsize66selectfont
+par
+setbeamertemplateframetitle 
+  nointerlineskip
+  beginbeamercolorbox[sep=0.15cm,ht=1.3em,wd=paperwidth]frametitle
+    vboxvskip-2ex
+    strutinsertframetitlestrut
+    vskip-0.8ex
+  endbeamercolorbox
+
+par
+defbeamertemplate*title pagecustomized[1][] 
+  centering
+  bigskip
+  bigskip
+  bigskip
+  usebeamercolor[fg]titleinsertsubtitlepar
+usebeamerfonttitleinserttitlepar
+usebeamerfontsubtitle
+  bigskip
+  usebeamercolor[fg]normal
+  usebeamerfontauthorinsertauthorpar
+usebeamerfontinstituteinsertinstitutepar
+usebeamerfontdateinsertdatepar
+bigskip
+  bigskip
+  bigskip
+  bigskip
+  bigskip
+  usebeamercolor[fg]titlegraphicinserttitlegraphic
+
+par
+title[Introduction]An Introduction to Python
+authorParham Alvani
+institute[AUT] 
+  Amirkabir University of Technology 
+<BR>
+medskip
+  smalltt parham.alvani@gmail.com
+
+dateMay 14, 2015
+titlegraphichspace*5cmincludegraphics[width=2cm]figs/aut_logo.jpeg
+par
+begindocument
+par
+beginframe
+titlepage
+endframe
+par
+section
+subsection
+par
+beginframe
+begincolumns
+	begincolumn10cm
+		vspace2cm
+		beginblock
+				centeringtextcolordarkredWhat is python...
+				justifying
+				Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable..
+<BR>
+endblock
+	endcolumn
+endcolumns
+vspace.75cm
+hspace*8.5cmincludegraphics[width=3cm]figs/python.jpeg
+endframe
+par
+beginframe
+	frametitleEnvironment
+	hspace*1.5cmincludegraphics[width=10cm]figs/python-console-linux.png
+endframe
+par
+beginframe
+	frametitleVariable Types
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Numbers
+				item String
+				item List
+				item Tuple
+				item Dictionary
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/python-types.jpg
+endframe
+par
+beginframe
+	frametitleNumbers
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Number data types store numeric values.
+				item They are immutable data types, means that changing the value of 
+<BR>
+a number data type results in a newly allocated object.
+			enditemize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleStrings
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Strings are among the most popular types in Python.
+				item We can create them simply by enclosing characters in quotes.
+				item Python treats single quotes the same as double quotes.
+			enditemize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleLists
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item The most basic data structure in Python is the sequence.
+				item Each element of a sequence is assigned a number - its position or index.
+				item The first index is zero, the second index is one, and so forth.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/list.jpg	
+endframe
+par
+beginframe
+	frametitleTuples
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginitemize
+				justifying
+				item A tuple is a sequence of immutable Python objects.
+				item Tuples are sequences, just like lists.
+				item The differences between tuples and lists are:
+				beginitemize
+						item the tuples cannot be changed unlike lists
+						item tuples use parentheses, whereas lists use square brackets.
+				enditemize
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.1cm
+	hspace*5.5cm includegraphics[width=5cm]figs/tuple.jpg
+endframe
+par
+beginframe
+	frametitleDictionary
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Each key is separated from its value by a colon (:)
+				item The items are separated by commas
+				item The whole thing is enclosed in curly braces.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/dictionary.jpg
+endframe
+par
+beginframe
+	frametitleFlow Control
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item If-Then-Else
+				item For
+				item While
+				item Exceptions
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/flow-control.jpg
+endframe
+par
+beginframe
+	frametitleFunctions
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Function blocks begin with the keyword textcolororangedef, 
+<BR>
+followed by the function name and parentheses.
+				item Any input parameters or arguments should be placed 
+<BR>
+within these parentheses.
+				item The first statement of a function can be an optional statement - 
+<BR>
+the documentation string of the function or docstring.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.1cm
+	hspace*5cm includegraphics[width=5cm]figs/functions.jpg
+endframe
+par
+beginframe[fragile]
+	frametitleFunctions
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginscriptsize
+			  	beginminted[
+			  	bgcolor=BG,
+			  	frame=lines,
+			  	framesep=2mm,
+			  	baselinestretch=1.2,
+			  	linenos]
+			  	python
+		  			def square(x):
+				  	    return x * x
+		  		endminted
+		  		beginminted[
+		  		bgcolor=BG,
+		  		frame=lines,
+		  		framesep=2mm,
+		  		baselinestretch=1.2,
+		  		linenos]
+		  		python
+			  		def hello():
+		  			    return "Hello"
+			  	endminted
+			  	beginminted[
+			  	bgcolor=BG,
+			  	frame=lines,
+			  	framesep=2mm,
+			  	baselinestretch=1.2,
+			  	linenos]
+			  	python
+			  	def printme( statement ):
+			  	    "This prints a passed string into this function"
+			  	    print statement
+			  	    return
+			  	endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleLambda
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Python supports simple anonymous functions through the lambda form.
+				item The executable body of the lambda must be an expression 
+<BR>
+and can't be a statement, which is a restriction that limits its utility.
+			enditemize
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				foo = lambda x: x * x
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+	vspace.1cm
+	hspace*5cm includegraphics[width=5cm]figs/lambda.png
+endframe
+par
+beginframe
+	frametitleClasses
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item The class statement creates a new class definition.
+				item The name of the class immediately follows the keyword textcolororangeclass 
+<BR>
+followed by a colon as follows
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/class.jpg
+endframe
+par
+beginframe[fragile]
+	frametitleClasses
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				class Employee:
+				    """
+				    Common base class for all employees
+				    """
+				    empCount = 0
+par
+def __init__(self, name, salary):
+				        self.name = name
+				        self.salary = salary
+				        Employee.empCount += 1
+par
+def displayCount(self):
+				        print "Total Employee par
+def displayEmployee(self):
+				        print "Name : ", self.name,  ", Salary: ", self.salary
+				endminted
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				emp1 = Employee("Zara", 2000)
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleGarbage Collection
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Python deletes unneeded objects automatically to free the memory space.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/garbage.jpg
+endframe
+par
+beginframe
+	frametitleInheritance
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Instead of starting from scratch, you can create a class by deriving it 
+<BR>
+from a preexisting class by listing the parent class in parentheses 
+<BR>
+after the new class name.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*5.5cm includegraphics[width=5cm]figs/Inheritance.jpg
+endframe
+par
+beginframe[fragile]
+	frametitleInheritance
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				class SubClassName (ParentClass1[, ParentClass2, ...]):
+				    """
+				    Optional class documentation string
+				    """
+				    # class_suite
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleBase Overloading Methods
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item __init__( self [,args...] ) : textcolorOceanConstructor (with any optional arguments)
+				item __del__( self ) : textcolorOceanDestructor, deletes an object
+				item __repr__( self ) : textcolorOceanEvaluatable string representation
+				item __str__( self ) : textcolorOceanPrintable string representation
+				item __lt__( self, other ):
+				item __le__( self, other ):
+				item __eq__( self, other ):
+				item __ne__( self, other ):
+				item __gt__( self, other ):
+				item __ge__( self, other ): 
+<BR>
+textcolorOceanThese are the so-called “rich comparison” methods, 
+<BR>
+textcolorOceanand are called for comparison operators in preference to __cmp__() below.
+			enditemize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleBase Overloading Methods
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item __cmp__ ( self, x ) : textcolorOceanCalled by comparison operations if rich comparison 
+<BR>
+textcolorOceanis not defined. 
+				item __add__( self, other ):
+				item __sub__( self, other ):
+				item __mul__( self, other ):
+				item __floordiv__( self, other ):
+				item __mod__( self, other ):
+				item __divmod__( self, other ):
+				item __pow__( self, other[, modulo] ):
+				enditemize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleBase Overloading Methods
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item __lshift__( self, other ):
+				item __rshift__( self, other ):
+				item __and__( self, other ):
+				item __xor__( self, other ):
+				item __or__( self, other ): 
+<BR>
+textcolorOceanThese methods are called to implement the binary arithmetic operations 
+<BR>
+textcolorgreen+, -, *, //, %, divmod(), pow(), **, textlesstextless, textgreatertextgreater,
+				&amp;, textasciicircum, textbar
+			enditemize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleData Hiding
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item An object's attributes may or may not be visible outside 
+<BR>
+the class definition.
+				item You need to name attributes with a double underscore prefix, and those 
+<BR>
+attributes then are not be directly visible to outsiders.
+				item Python protects those members by internally changing the name to 
+<BR>
+include the class name.
+				item You can access such attributes as textcolororangeobject._className__attrName
+			enditemize
+		endcolumn
+	endcolumns
+	vspace1cm
+	hspace*5.5cm
+endframe
+par
+beginframe[fragile]
+	frametitleData Hiding
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				#!/usr/bin/python
+par
+class JustCounter:
+				    __secretCount = 0
+par
+def count(self):
+				        self.__secretCount += 1
+				        print self.__secretCount
+par
+counter = JustCounter()
+				counter.count()
+				counter.count()
+				print counter.__secretCount
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleData Hiding
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				1
+				2
+				Traceback (most recent call last):
+				File "test.py", line 12, in &lt;module&gt;
+				print counter.__secretCount
+				AttributeError: JustCounter instance has no attribute '__secretCount'
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	frametitleWhat is a metaclass in Python?
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item A metaclass is the class of a class
+				item Like a class defines how an instance of the class behaves,
+<BR>
+a metaclass defines how a class behaves.
+				 item A class is an instance of a metaclass.
+			enditemize
+		endcolumn
+	endcolumns
+	vspace.5cm
+	hspace*2cm includegraphics[width=8cm]figs/meta-class.jpg
+endframe
+par
+beginframe
+	frametitleMultiple Inheritance
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+				justifying
+				item Method Resolution Order (MRO)
+				item C3 Algorithm
+			enditemize
+		endcolumn
+	endcolumns
+	vspace1cm
+	hspace*5.5cm includegraphics[width=5cm]figs/multiple-inheritance.jpg
+endframe
+par
+beginframe
+	frametitleC3 linearization
+	begincolumns[c]
+		begincolumn30cm
+			vspace.1cm
+			beginitemize
+					justifying
+					item The C3 superclass linearization is an algorithm used primarily 
+<BR>
+to obtain the order in which methods should 
+<BR>
+be inherited (the "linearization") in the presence of 
+<BR>
+multiple inheritance, and is often termed "MRO" 
+<BR>
+for Method Resolution Order.	
+			enditemize		
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleC3 Algorithm
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				text
+				class O
+				class A extends O
+				class B extends O
+				class C extends O
+				class D extends O
+				class E extends O
+				class K1 extends A, B, C
+				class K2 extends D, B, E
+				class K3 extends D, A
+				class Z extends K1, K2, K3
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleC3 Algorithm
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				text
+				L(O)  := [O]                                                     
+par
+L(A)  := [A] + merge(L(O), [O])
+				= [A] + merge([O], [O])
+				= [A, O]                                                  
+par
+L(B)  := [B, O]
+				L(C)  := [C, O]
+				L(D)  := [D, O]
+				L(E)  := [E, O]
+par
+L(K1) := [K1] + merge(L(A), L(B), L(C), [A, B, C])
+				= [K1] + merge([A, O], [B, O], [C, O], [A, B, C])
+				= [K1, A] + merge([O], [B, O], [C, O], [B, C])
+				= [K1, A, B] + merge([O], [O], [C, O], [C])
+				= [K1, A, B, C] + merge([O], [O], [O])
+				= [K1, A, B, C, O]
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleC3 Algorithm
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+					bgcolor=BG,
+					frame=lines,
+					framesep=2mm,
+					baselinestretch=1.2,
+					linenos]
+					text
+					L(K2) := [K2] + merge(L(D), L(B), L(E), [D, B, E])
+					= [K2] + merge([D, O], [B, O], [E, O], [D, B, E])
+					= [K2, D] + merge([O], [B, O], [E, O], [B, E])
+					= [K2, D, B] + merge([O], [O], [E, O], [E])
+					= [K2, D, B, E] + merge([O], [O], [O])
+					= [K2, D, B, E, O]
+par
+L(K3) := [K3] + merge(L(D), L(A), [D, A])
+					= [K3] + merge([D, O], [A, O], [D, A])
+					= [K3, D] + merge([O], [A, O], [A])
+					= [K3, D, A] + merge([O], [O])
+					= [K3, D, A, O]
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleC3 Algorithm
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginscriptsize
+				beginminted[
+					bgcolor=BG,
+					frame=lines,
+					framesep=2mm,
+					baselinestretch=1.2,
+					linenos]
+					text
+					L(Z)  := [Z] + merge(L(K1), L(K2), L(K3), [K1, K2, K3])
+					= [Z] + merge([K1, A, B, C, O], [K2, D, B, E, O], [K3, D, A, O], [K1, K2, K3])
+					= [Z, K1] + merge([A, B, C, O], [K2, D, B, E, O], [K3, D, A, O], [K2, K3])
+					= [Z, K1, K2] + merge([A, B, C, O], [D, B, E, O], [K3, D, A, O], [K3])
+					= [Z, K1, K2, K3] + merge([A, B, C, O], [D, B, E, O], [D, A, O])
+					= [Z, K1, K2, K3, D] + merge([A, B, C, O], [B, E, O], [A, O])
+					= [Z, K1, K2, K3, D, A] + merge([B, C, O], [B, E, O], [O])
+					= [Z, K1, K2, K3, D, A, B] + merge([C, O], [E, O], [O])
+					= [Z, K1, K2, K3, D, A, B, C] + merge([O], [E, O], [O])
+					= [Z, K1, K2, K3, D, A, B, C, E] + merge([O], [O], [O])
+					= [Z, K1, K2, K3, D, A, B, C, E, O]
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleClass method differences in Python
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginitemize
+				justifying
+				item Bound, unbound and static
+				item Basically, a call to a member function a bound function 
+<BR>
+is translated to a call to an unbound method. 
+			enditemize
+			vspace0.5cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				class Test(object):
+				    def method_one(self):
+				        print "Called method_one"
+par
+a_test = Test()
+par
+a_test.method_one()
+				# is translated to
+				Test.method_one(a_test)
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe[fragile]
+	frametitleClass method differences in Python
+	begincolumns[c]
+		begincolumn30cm
+			vspace.05cm
+			beginitemize
+				justifying
+				item The @staticmethod tells the built-in default metaclass type 
+<BR>				(the class of a class) to not create bound methods for method_two.
+			enditemize
+			vspace0.5cm
+			beginscriptsize
+				beginminted[
+				bgcolor=BG,
+				frame=lines,
+				framesep=2mm,
+				baselinestretch=1.2,
+				linenos]
+				python
+				class Test(object):
+				    @staticmethod
+				    def method_two():
+				        print "Called method two"
+par
+a_test = Test()
+				a_test.method_two()
+				# is translated to
+				Test.method_two()
+				endminted
+			endscriptsize
+		endcolumn
+	endcolumns
+endframe
+par
+beginframe
+	vspace1cm
+	beginHuge
+		begincenter
+			usebeamercolor[fg]titleQuestions?
+		endcenter
+	endHuge
+endframe
+par
+enddocument
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html4"
+  HREF="node1.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev_g.png">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+  HREF="node1.html">About this document ...</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+infinitejock1995
+2017-08-14
+</ADDRESS>
+</BODY>
+</HTML>
